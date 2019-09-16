@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Дизайн-студия Нёрдс</title>
+    <title>Магазин готовых шаблонов дизайн-студии Нёрдс</title>
   </head>
+
   <body>
     <header>
       <nav>
@@ -16,13 +17,15 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul>
+        <div>
           <li><a href="basket.html">Корзина</a></li>
-        </ul>
+        </div>
       </nav>
-    </header>
-    <main>
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+    </header>
+
+    <main>
+          <!-- Здесь красный блок -->
       <section>
         <h2 class="visually-hidden">Проекты</h2>
         <ul>
@@ -43,21 +46,58 @@
           </li>
         </ul>
       </section>
-
+        <!-- Здесь красный блок -->
     </main>
 
     <footer>
-      <div class="footer-left">
-        <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
+
+      <section class="social wrapper">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
         </ul>
-      </div>
-      <div class="footer-right">
-        <p class="big-txt">Давайте дружить, это выгодно! </p>
-        <p class="small-txt">Скидка 10% для друзей из социальных сетей.</p>
-      <div>
-    </footer>
+       <div class="social-info">
+         <p class="social-lead">Давайте дружить, это выгодно! </p>
+         <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
+       </div>
+     </section>
+  </footer>
+
+     <section class="write-us">
+       <h2 class="write-us-title">Напишите нам</h2>
+       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+         <p class="write-us-item">
+           <label class="write-us-label" for="write-us-name">Ваше имя:</label>
+           <input class="write-us-input" id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+         </p>
+         <p class="write-us-item">
+           <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
+           <input class="write-us-input" id="write-us-email" type="email" name="email" placeholder="email@example.com">
+         </p>
+         <p class="write-us-item">
+           <label class="write-us-label" for="write-us-message">Текст письма</label>
+           <textarea class="write-us-textarea" id="write-us-message" cols="" rows="" name="message" placeholder="В свободной форме">
+           </textarea>
+         </p>
+         <button class="btn write-us-btn" type="submit">Отправить</button>
+       </form>
+       <button class="modal-close">
+         <span class="visually-hidden">Закрыть</span>
+       </button>
+     </section>
   </body>
 </html>
