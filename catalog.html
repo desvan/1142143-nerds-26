@@ -26,8 +26,8 @@
     <main>
       <section>
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <form class="filters-form">
-        <!-- Здесь будет форма -->
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+        <!-- Здесь будет форма, потом доделаю, она в красной области -->
 
           <fieldset class="filters-form">
             <legend class="filters-form">Сетка:</legend>
@@ -64,7 +64,8 @@
               <li class="filters-form">
                 <input class="filters-form-input-check visually-hidden" id="filter-gallery" type="checkbox" name="gallery">
                 <label class="filters-form-label-check" for="filter-gallery">Галерея</label>
-              </li<li class="filters-form">
+              </li>
+              <li class="filters-form">
                 <input class="filters-form-input-check visually-hidden" id="filter-cart" type="checkbox" name="cart">
                 <label class="filters-form-label-check" for="filter-cart">Корзина</label>
               </li>
@@ -75,79 +76,66 @@
       </section>
       <!-- Здесь будет сортировка -->
 
-      </section>
+
       <section class="catalog">
         <h2 class="visually-hidden">Каталог готовых шаблоны</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <div class="catalog-item">
-              <a class="catalog-item" href="#">
-                <h3 class="catalog-item">Sedona</h3>
-              </a>
-              <p class="catalog-item">Информационный сайт для туристов</p>
-              <button class="btn catalog-item" type="button">9 900 руб.</button>
-            </div>
+            <a class="catalog-item" href="#">
+              <h3 class="catalog-item">Sedona</h3>
+            </a>
+            <p class="catalog-item">Информационный сайт для туристов</p>
+            <a class="catalog-item-buy" href="#">9 900 руб.</a>
             <p class="catalog-item-photo">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Фото шаблона Седона">
             </p>
           </li>
           <li class="catalog-item">
-            <div class="catalog-item">
-              <a class="catalog-item" href="#">
-                <h3 class="catalog-item">Pink App</h3>
-              </a>
-              <p class="catalog-item">Продуктовый лендинг приложения для iOS и Android</p>
-              <button class="btn catalog-item" type="button">9 900 руб.</button>
-            </div>
+            <a class="catalog-item" href="#">
+              <h3 class="catalog-item">Pink App</h3>
+            </a>
+            <p class="catalog-item">Продуктовый лендинг приложения для iOS и Android</p>
+            <a class="catalog-item-buy" href="#">9 900 руб.</a>
             <p class="catalog-item-photo">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Фото шаблона Пинк">
             </p>
           </li>
           <li class="catalog-item">
-            <div class="catalog-item">
-              <a class="catalog-item" href="#">
-                <h3 class="catalog-item">Barbershop</h3>
-              </a>
-              <p class="catalog-item">Сайт салона красоты. Для мужчин, да.</p>
-              <button class="btn catalog-item" type="button">9 900 руб.</button>
-            </div>
+            <a class="catalog-item" href="#">
+              <h3 class="catalog-item">Barbershop</h3>
+            </a>
+            <p class="catalog-item">Сайт салона красоты. Для мужчин, да.</p>
+            <a class="catalog-item-buy" href="#">9 900 руб.</a>
             <p class="catalog-item-photo">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Фото шаблона Барбершоп">
             </p>
           </li>
-
           <li class="catalog-item">
-            <div class="catalog-item">
-              <a class="catalog-item" href="#">
-                <h3 class="catalog-item">Mishka</h3>
-              </a>
-              <p class="catalog-item">Интернет-магазин вязанныхт игрушек.</p>
-              <button class="btn catalog-item" type="button">9 900 руб.</button>
-            </div>
+            <a class="catalog-item" href="#">
+              <h3 class="catalog-item">Mishka</h3>
+            </a>
+            <p class="catalog-item">Интернет-магазин вязанных игрушек.</p>
+            <a class="catalog-item-buy" href="#">9 900 руб.</a>
             <p class="catalog-item-photo">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Фото шаблона Мишка">
             </p>
           </li>
           <li class="catalog-item">
-            <div class="catalog-item">
-              <a class="catalog-item" href="#">
-                <h3 class="catalog-item">A Plus</h3>
-              </a>
-              <p class="catalog-item">Лендинг курсов повышения квалификации</p>
-              <button class="btn catalog-item" type="button">9 900 руб.</button>
-            </div>
+            <a class="catalog-item" href="#">
+              <h3 class="catalog-item">A Plus</h3>
+            </a>
+            <p class="catalog-item">Лендинг курсов повышения квалификации</p>
+            <a class="catalog-item-buy" href="#">9 900 руб.</a>
             <p class="catalog-item-photo">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="Фото шаблона А Плюс">
             </p>
           </li>
           <li class="catalog-item">
-            <div class="catalog-item">
-              <a class="catalog-item" href="#">
-                <h3 class="catalog-item">Кваст</h3>
-              </a>
-              <p class="catalog-item">Промо-сайт производителя крафтового кваса</p>
-              <button class="btn catalog-item" type="button">9 900 руб.</button>
-            </div>
+            <a class="catalog-item" href="#">
+              <h3 class="catalog-item">Кваст</h3>
+            </a>
+            <p class="catalog-item">Промо-сайт производителя крафтового кваса</p>
+            <a class="catalog-item-buy" href="#">9 900 руб.</a>
             <p class="catalog-item-photo">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Фото шаблона Кваст">
             </p>
@@ -207,12 +195,12 @@
          </p>
          <p class="write-us-item">
            <label class="write-us-label" for="write-us-message">Текст письма</label>
-           <textarea class="write-us-textarea" id="write-us-message" cols="" rows="" name="message" placeholder="В свободной форме">
+           <textarea class="write-us-textarea" id="write-us-message" name="message" placeholder="В свободной форме">
            </textarea>
          </p>
          <button class="btn write-us-btn" type="submit">Отправить</button>
        </form>
-       <button class="modal-close">
+       <button class="modal-close" type="button">
          <span class="visually-hidden">Закрыть</span>
        </button>
      </section>
