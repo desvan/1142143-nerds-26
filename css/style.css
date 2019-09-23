@@ -1,0 +1,279 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1200px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 35px;
+  font: inherit;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+  color: #ffffff;
+  background: #fb565a;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: #e74246;
+}
+
+.btn:focus,
+.btn:active {
+  background-color: #d7373b;
+  outline: none;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.main-header {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.header-logo {
+  display: block;
+  width: 160px;
+  height: 65px;
+}
+
+.header-logo:hover {
+  opacity: 0.8;
+}
+
+.header-logo:focus,
+.header-logo:active {
+  opacity: 0.3;
+}
+
+.site-link,
+.user-link {
+  display: block;
+  padding: 6px 0;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  outline: none;
+}
+
+.site-link:hover,
+.user-link:hover,
+.site-link:focus,
+.user-link:focus {
+  color: #fb565a;
+}
+
+.site-link:active,
+.user-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*Никак не получается нормально отобразить иконку тележки*/
+.user-cart {
+  background-image: url("img/cart-icon.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+/*Никак не получается нормально отобразить иконку тележки*/
+
+.title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.features-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.services-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-lead {
+  display: block;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about-est {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-stats td {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.about-stats sup {
+  font-size: 26px;
+  vertical-align: top;
+}
+
+.about-stats th {
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.form-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.range-input {
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #eeeeee;
+}
+
+.catalog-link {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-link:hover,
+.catalog-link:focus {
+  color: #fb565a;
+}
+
+.catalog-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-link {
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.contacts-lead {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts-text {
+  line-height: 18px;
+  color: #666666;
+}
+
+.social-link {
+  position: relative;
+  display: block;
+  width: 79px;
+  height: 79px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  outline: none;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #e74246;
+}
+
+.social-link:active {
+  background-color: #d7373b;
+}
+
+.social-lead {
+  display: block;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.social-text {
+  line-height: 22px;
+  color: #444444;
+}
+
+.write-title {
+  box-sizing: border-box;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.write-label {
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.write-input,
+.write-textarea {
+  font: inherit;
+  line-height: 18px;
+  vertical-align: top;
+  color: #444444;
+  background-color: #ffffff;
+}
