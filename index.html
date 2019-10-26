@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия Нёрдс</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic&display=swap">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -16,17 +16,20 @@
         </a>
         <ul class="site-navigation">
           <li class="site-item">
-            <a class="site-link" href="studio.html">Студия</a>
+            <a class="site-link" href="#">Студия</a>
           </li>
           <li class="site-item">
-            <a class="site-link" href="clients.html">Клиенты</a></li>
+            <a class="site-link" href="#">Клиенты</a>
+          </li>
           <li class="site-item">
-            <a class="site-link" href="catalog.html">Магазин</a></li>
+            <a class="site-link" href="catalog.html">Магазин</a>
+          </li>
           <li class="site-item">
-            <a class="site-link" href="contacts.html">Контакты</a></li>
+            <a class="site-link" href="#">Контакты</a>
+          </li>
         </ul>
         <div class="user-navigation">
-          <a class="user-link" class="user-cart" href="basket.html">Корзина</a>
+          <a class="user-link user-cart" href="#">Корзина</a>
         </div>
       </nav>
       <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
@@ -62,7 +65,7 @@
               <a class="btn features-btn" href="#">Узнать больше</a>
             </li>
             <li class="features-item slider-item">
-              <h3 class="features-title">Только ночь, только хардкор</h3>
+              <h3 class="features-title">Только ночь, только&nbsp;хардкор</h3>
               <p class="features-text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
               <a class="btn features-btn" href="#">Узнать больше</a>
             </li>
@@ -94,9 +97,9 @@
       <section class="about wrapper">
         <h2 class="visually-hidden">О нас</h2>
         <div class="about-left">
-          <b class="about-lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p class="about-lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <p class="about-highlight">Выполняем заказы на разработку:</p>
+          <p class="about-est">Выполняем заказы на разработку:</p>
           <ul class="about-list">
             <li class="about-item">Веб-сайтов любой сложности</li>
             <li class="about-item">Мобильных приложений для iOS и Android</li>
@@ -153,13 +156,18 @@
     <footer class="main-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts-info">
-          <b class="contacts-lead">Nёrds Design Studio</b>
-          <p class="contacts-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts-text">тел. +7 (812) 275-75-75</p>
-          <a class="btn contacts-btn" href="write-us.html">Напишите нам</a>
+        <div class="wrapper">
+          <div class="contacts-info">
+            <b class="contacts-lead">Nёrds Design Studio</b>
+            <p class="contacts-text">191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д. 19/8</p>
+            <p class="contacts-text">тел. +7 (812) 275-75-75</p>
+            <a class="btn contacts-btn" href="write-us.html">Напишите нам</a>
+          </div>
         </div>
-        <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.32089461607064!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1571662925859!5m2!1sru!2sru" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <p class="contacts-map">
+          <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
+        </p>
       </section>
 
       <section class="social wrapper">
@@ -188,7 +196,7 @@
      </section>
   </footer>
 
-     <section class="write-us modal">
+     <section class="write-us modal modal-write">
        <h2 class="write-title">Напишите нам</h2>
        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
          <p class="write-item">
@@ -199,10 +207,9 @@
            <label class="write-label" for="write-email">Ваш e-mail:</label>
            <input class="write-input" id="write-email" type="email" name="email" placeholder="email@example.com">
          </p>
-         <p class="write-item">
+         <p class="write-item item-message">
            <label class="write-label" for="write-message">Текст письма</label>
-           <textarea class="write-textarea" id="write-message" cols="78" rows="4" name="message" placeholder="В свободной форме">
-           </textarea>
+           <textarea class="write-textarea" id="write-message" cols="78" rows="4" name="message" placeholder="В свободной форме"></textarea>
          </p>
          <button class="btn write-btn" type="submit">Отправить</button>
        </form>
@@ -210,5 +217,8 @@
          <span class="visually-hidden">Закрыть</span>
        </button>
      </section>
+
+    <script src="js/my.js"></script>
+
   </body>
 </html>

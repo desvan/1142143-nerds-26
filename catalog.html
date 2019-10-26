@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов дизайн-студии Нёрдс</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic&display=swap">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,20 +15,20 @@
         </a>
         <ul class="site-navigation">
           <li class="site-item">
-            <a class="site-link" href="studio.html">Студия</a>
+            <a class="site-link" href="#">Студия</a>
           </li>
           <li class="site-item">
-            <a class="site-link" href="clients.html">Клиенты</a>
+            <a class="site-link" href="#">Клиенты</a>
+          </li>
+          <li class="site-item site-current">
+            <a class="site-link" href="catalog.html">Магазин</a>
           </li>
           <li class="site-item">
-            <a class="site-link">Магазин</a>
-          </li>
-          <li class="site-item">
-            <a class="site-link" href="contacts.html">Контакты</a>
+            <a class="site-link" href="#">Контакты</a>
           </li>
         </ul>
-        <div>
-          <a class="user-link" class="user-cart" href="basket.html">Корзина</a>
+        <div class="user-navigation">
+          <a class="user-link user-cart" href="#">Корзина</a>
         </div>
       </nav>
       <h1 class="title wrapper">Магазин готовых шаблонов</h1>
@@ -46,10 +46,12 @@
             </div>
             <div class="range-inputs">
               <label class="range-label">
-                От<input class="range-input input-min" type="number" name="price-min" value="0">
+                От
+                <input class="range-input input-min" type="number" name="price-min" value="0">
               </label>
               <label class="range-label">
-                До<input class="range-input input-max" type="number" name="price-max" value="15000">
+                До
+                <input class="range-input input-max" type="number" name="price-max" value="15000">
               </label>
             </div>
           </fieldset>
@@ -100,88 +102,143 @@
           <button class="btn form-btn" type="submit">Показать</button>
         </form>
       </section>
-      <!-- Здесь будет сортировка -->
 
+      <div class="content-right">
+        <section class="sort">
+          <h2 class="visually-hidden">Сортировка шаблонов</h2>
+          <p class="sort-text">Сортировать:</p>
+          <ul class="sort-type">
+            <li class="sort-option option-current">
+              <a class="sort-link">По цене</a>
+            </li>
+            <li class="sort-option">
+              <a class="sort-link" href="#">По типу</a>
+            </li>
+            <li class="sort-option">
+              <a class="sort-link" href="#">По названию</a>
+            </li>
+          </ul>
+          <ul class="sort-order">
+            <li class="order-option option-current">
+              <a class="order-link link-desc"><span class="visually-hidden">По убыванию</span></a>
+            </li>
+            <li class="order-option">
+              <a class="order-link link-asc" href="#"><span class="visually-hidden">По возрастанию</span></a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="catalog">
-        <h2 class="visually-hidden">Каталог готовых шаблоны</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h3 class="catalog-title"><a class="catalog-link" href="#">Sedona</a></h3>
-            <p class="catalog-description">Информационный сайт для туристов</p>
-            <a class="btn catalog-buy" href="#">9 900 руб.</a>
-            <p class="catalog-photo">
-              <img src="img/img-sedona.jpg" width="360" height="576" alt="Фото шаблона Седона">
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3 class="catalog-title"><a class="catalog-link" href="#">Pink App</a></h3>
-            <p class="catalog-description">Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="btn catalog-buy" href="#">9 900 руб.</a>
-            <p class="catalog-photo">
-              <img src="img/img-pink.jpg" width="360" height="576" alt="Фото шаблона Пинк">
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3 class="catalog-title"><a class="catalog-link" href="#">Barbershop</a></h3>
-            <p class="catalog-description">Сайт салона красоты. Для мужчин, да.</p>
-            <a class="btn catalog-buy" href="#">9 900 руб.</a>
-            <p class="catalog-photo">
-              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Фото шаблона Барбершоп">
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3 class="catalog-title"><a class="catalog-link" href="#">Mishka</a></h3>
-            <p class="catalog-description">Интернет-магазин вязанных игрушек.</p>
-            <a class="btn catalog-buy" href="#">9 900 руб.</a>
-            <p class="catalog-photo">
-              <img src="img/img-mishka.jpg" width="360" height="576" alt="Фото шаблона Мишка">
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3 class="catalog-title"><a class="catalog-link" href="#">A Plus</a></h3>
-            <p class="catalog-description">Лендинг курсов повышения квалификации</p>
-            <a class="btn catalog-buy" href="#">9 900 руб.</a>
-            <p class="catalog-photo">
-              <img src="img/img-aplus.jpg" width="360" height="576" alt="Фото шаблона А Плюс">
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3 class="catalog-title"><a class="catalog-link" href="#">Кваст</a></h3>
-            <p class="catalog-description">Промо-сайт производителя крафтового кваса</p>
-            <a class="btn catalog-buy" href="#">9 900 руб.</a>
-            <p class="catalog-photo">
-              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Фото шаблона Кваст">
-            </p>
-          </li>
-        </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-current">
-            <a class="pagination-link">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">Следующая</a>
-          </li>
-        </ul>
-      </section>
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог готовых шаблоны</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <div class="catalog-info">
+                <a class="catalog-link" href="#">
+                  <h3 class="catalog-title">Sedona</h3>
+                </a>
+                <p class="catalog-description">Информационный сайт для&nbsp;туристов</p>
+                <button class="btn catalog-buy" type="button">9 900 руб.</button>
+              </div>
+              <p class="catalog-foto">
+                <img src="img/img-sedona.jpg" width="360" height="576" alt="Фото шаблона Седона">
+              </p>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-info">
+                <a class="catalog-link" href="#">
+                  <h3 class="catalog-title">Pink App</h3>
+                </a>
+                <p class="catalog-description">Продуктовый лендинг приложения для iOS и Android</p>
+                <button class="btn catalog-buy" type="button">9 900 руб.</button>
+              </div>
+              <p class="catalog-foto">
+                <img src="img/img-pink.jpg" width="360" height="576" alt="Фото шаблона Пинк">
+              </p>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-info">
+                <a class="catalog-link" href="#">
+                  <h3 class="catalog-title">Barbershop</h3>
+                </a>
+                <p class="catalog-description">Сайт салона красоты. Для&nbsp;мужчин, да</p>
+                <button class="btn catalog-buy" type="button">9 900 руб.</button>
+              </div>
+              <p class="catalog-foto">
+                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Фото шаблона Барбершоп">
+              </p>
+            </li>
+
+            <li class="catalog-item">
+              <div class="catalog-info">
+                <a class="catalog-link" href="#">
+                  <h3 class="catalog-title">Mishka</h3>
+                </a>
+                <p class="catalog-description">Интернет-магазин вязанных игрушек</p>
+                <button class="btn catalog-buy" type="button">9 900 руб.</button>
+              </div>
+              <p class="catalog-foto">
+                <img src="img/img-mishka.jpg" width="360" height="576" alt="Фото шаблона Мишка">
+              </p>
+            </li>
+
+            <li class="catalog-item">
+              <div class="catalog-info">
+                <a class="catalog-link" href="#">
+                  <h3 class="catalog-title">A Plus</h3>
+                </a>
+                <p class="catalog-description">Лендинг курсов повышения квалификации</p>
+                <button class="btn catalog-buy" type="button">9 900 руб.</button>
+              </div>
+              <p class="catalog-foto">
+                <img src="img/img-aplus.jpg" width="360" height="576" alt="Фото шаблона Мишка">
+              </p>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-info">
+                <a class="catalog-link" href="#">
+                  <h3 class="catalog-title">Кваст</h3>
+                </a>
+                <p class="catalog-description">Промо-сайт производителя крафтового кваса</p>
+                <button class="btn catalog-buy" type="button">9 900 руб.</button>
+              </div>
+              <p class="catalog-foto">
+                <img src="img/img-kvast.jpg" width="360" height="576" alt="Фото шаблона Мишка">
+              </p>
+            </li>
+          </ul>
+          <ul class="pagination-list" aria-label="Страницы каталога">
+            <li class="pagination-item pagination-current">
+              <a class="pagination-link">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next" href="#">Следующая</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="main-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts-info">
-          <b class="contacts-lead">Nёrds Design Studio</b>
-          <p class="contacts-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts-text">тел. +7 (812) 275-75-75</p>
-          <a class="btn contacts-btn" href="write-us.html">Напишите нам</a>
+        <div class="wrapper">
+          <div class="contacts-info">
+            <b class="contacts-lead">Nёrds Design Studio</b>
+            <p class="contacts-text">191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д. 19/8</p>
+            <p class="contacts-text">тел. +7 (812) 275-75-75</p>
+            <a class="btn contacts-btn" href="write-us.html">Напишите нам</a>
+          </div>
         </div>
-        <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.32089461607064!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1571662925859!5m2!1sru!2sru" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <p class="contacts-map">
+          <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
+        </p>
       </section>
 
       <section class="social wrapper">
@@ -210,7 +267,7 @@
      </section>
    </footer>
 
-     <section class="write-us modal">
+     <section class="write-us modal modal-write">
        <h2 class="write-title">Напишите нам</h2>
        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
          <p class="write-item">
@@ -221,10 +278,9 @@
            <label class="write-label" for="write-email">Ваш e-mail:</label>
            <input class="write-input" id="write-email" type="email" name="email" placeholder="email@example.com">
          </p>
-         <p class="write-item">
-           <label class="write-label" for="write-message">Текст письма</label>
-           <textarea class="write-textarea" id="write-message" cols="78" rows="4" name="message" placeholder="В свободной форме">
-           </textarea>
+         <p class="write-item  item-message">
+           <label class="write-label" for="write-message">Текст письма:</label>
+           <textarea class="write-textarea" id="write-message" cols="78" rows="4" name="message" placeholder="В свободной форме"></textarea>
          </p>
          <button class="btn write-btn" type="submit">Отправить</button>
        </form>
@@ -232,5 +288,8 @@
          <span class="visually-hidden">Закрыть</span>
        </button>
      </section>
+
+    <script src="js/my.js"></script>
+
   </body>
 </html>
