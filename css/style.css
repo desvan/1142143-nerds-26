@@ -1188,16 +1188,12 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.catalog-link:hover {
+.catalog-link:hover > .catalog-title {
   color: #fb565a;
 }
 
-.catalog-item:not(:hover) .catalog-link:focus,
-.catalog-item:not(:hover) .catalog-link:focus ~ .catalog-description,
-.catalog-item:not(:hover) .catalog-link:focus ~ .catalog-buy,
-.catalog-item:not(:hover) .catalog-buy:focus {
-  position: relative;
-  left: 1000px;
+.catalog-link:active > .catalog-title {
+  color: rgba(0, 0, 0 , 0.3);
 }
 
 .catalog-item:not(:hover) .catalog-link:focus::after,
