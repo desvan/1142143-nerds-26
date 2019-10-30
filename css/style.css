@@ -60,6 +60,7 @@ input[type="radio"].visually-hidden {
   background-color: #fb565a;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
   -webkit-transition:
      color ease-in-out 0.1s,
      background-color ease-in-out 0.1s;
@@ -75,14 +76,10 @@ input[type="radio"].visually-hidden {
   background-color: #e74246;
 }
 
-.btn:focus,
 .btn:active {
   background-color: #d7373b;
   outline: none;
-}
-
-.btn:active {
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
@@ -199,7 +196,6 @@ input[type="radio"].visually-hidden {
   opacity: 0.8;
 }
 
-.header-logo:focus[href],
 .header-logo:active[href] {
   opacity: 0.3;
   outline: none;
@@ -265,6 +261,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   bottom: 0;
   display: inline-block;
+  vertical-align: top;
   width: 100%;
   height: 2px;
   background-color: #fb565a;
@@ -273,7 +270,7 @@ input[type="radio"].visually-hidden {
 .site-link,
 .user-link {
   display: inline-block;
-  vertical-align: ;
+  vertical-align: top;
   padding: 6px 0;
   line-height: 30px;
   font-weight: 500;
@@ -290,9 +287,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-link:hover[href],
-.user-link:hover[href],
-.site-link:focus[href],
-.user-link:focus[href] {
+.user-link:hover[href] {
   color: #fb565a;
 }
 
@@ -303,7 +298,7 @@ input[type="radio"].visually-hidden {
 
 .user-cart {
   display: inline-block;
-  vertical-align: ;
+  vertical-align: top;
   padding-left: 41px;
   background-image: url("../img/cart-icon.svg");
   background-position: 0 13px;
@@ -493,7 +488,6 @@ input[type="radio"].visually-hidden {
   background-color: #00bc6c;
 }
 
-.services-applications .services-btn:focus,
 .services-applications .services-btn:active {
   background-color: #00aa62;
 }
@@ -506,7 +500,6 @@ input[type="radio"].visually-hidden {
   background-color: #eab534;
 }
 
-.services-presentations .services-btn:focus,
 .services-presentations .services-btn:active {
   background-color: #e5a722;
 }
@@ -688,8 +681,7 @@ input[type="radio"].visually-hidden {
 
 }
 
-.partners-link:hover,
-.partners-link:focus {
+.partners-link:hover{
   opacity: 1;
 }
 
@@ -845,8 +837,7 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 
-.form-btn:hover,
-.form-btn:focus {
+.form-btn:hover {
   background-color: #dfdfdf;
 }
 
@@ -912,16 +903,6 @@ input[type="radio"].visually-hidden {
 .slider-max {
   left: calc(28px + 142px);
 }
-
-
-
-
-
-
-
-
-
-
 
 .range-inputs {
   display: -webkit-box;
@@ -1014,13 +995,6 @@ input[type="radio"].visually-hidden {
   width: 60px;
 }
 
-
-
-
-
-
-
-
 .sort-option {
   margin-right: 26px;
   margin-bottom: 4px;
@@ -1042,8 +1016,7 @@ input[type="radio"].visually-hidden {
   transition: opacity ease-in-out 0.1s;
 }
 
-.sort-link:hover[href],
-.sort-link:focus[href] {
+.sort-link:hover[href] {
   opacity: 0.6;
   outline: none;
 }
@@ -1090,9 +1063,7 @@ input[type="radio"].visually-hidden {
 }
 
 .link-desc:hover[href]::before,
-.link-asc:hover[href]::before,
-.link-desc:focus[href]::before,
-.link-asc:focus[href]::before {
+.link-asc:hover[href]::before {
   opacity: 1;
 }
 
@@ -1217,13 +1188,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.catalog-link:hover,
-.catalog-link:focus {
+.catalog-link:hover {
   color: #fb565a;
-}
-
-.catalog-link:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-item:not(:hover) .catalog-link:focus,
@@ -1328,14 +1294,12 @@ input[type="radio"].visually-hidden {
   transition: all ease-in-out 0.1s;
 }
 
-.pagination-link:hover[href],
-.pagination-link:focus[href] {
+.pagination-link:hover[href] {
   background-color: #dfdfdf;
 }
 
 .pagination-link:active[href] {
   color: (0, 0, 0, 0.3);
-
   background-color: #d5d5d5;
   -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
@@ -1387,6 +1351,10 @@ input[type="radio"].visually-hidden {
 .contacts-text {
   margin: 0 0 18px;
   line-height: 18px;
+  color: #666666;
+}
+
+.contacts-tel {
   color: #666666;
 }
 
@@ -1474,8 +1442,7 @@ input[type="radio"].visually-hidden {
   transition: all ease-in-out 0.1s;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover {
   background-color: #e74246;
 }
 
@@ -1582,8 +1549,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-close:hover {
   opacity: 1;
   outline: none;
 }
